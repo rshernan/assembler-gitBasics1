@@ -6,7 +6,7 @@ describe("exercise-10", () => {
     let count = await git.raw([
       "rev-list",
       "develop",
-      "master",
+      "main",
       "--merges",
       "--count",
     ]);
@@ -14,8 +14,8 @@ describe("exercise-10", () => {
     let n = Number(count);
 
     expect(n).toEqual(1);
-    expect(branches.current).toMatch(/master/);
+    expect(branches.current).toMatch(/main/);
     expect(branches.all).toContain("develop");
-    expect(branches.all).toContain("master");
+    expect(branches.all).toContain("main");
   });
 });

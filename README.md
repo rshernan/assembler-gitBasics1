@@ -3,3 +3,4 @@
 Assembler School Git Basics 1 Pill
 
 @daniassembler
+@rshernan @seikiro
